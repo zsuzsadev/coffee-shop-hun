@@ -1,1 +1,1 @@
-# coffee-shop-hun.github.io
+A simple coffee shop website.
