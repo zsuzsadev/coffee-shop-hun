@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--base-color);
+}
+
+h1, h2, h3, h4, h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.1;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+li a {
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 1000px;
+  margin-inline: auto;
+  background-color: var(--base-color);
+}
+
+#navbarheading {
+  margin-right: auto;
+  padding-left: 3px;
+  color: var(--darkest-text-color);
+}
+
+header img {
+  width: 50px;
+  height: 20px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+nav {
+  order: 1;
+}
+
+.navlinks {
+  list-style: none;
+}
+
+.navlinks li {
+  display: inline-block;
+  padding-inline: 20px;
+  border-right: 1px solid var(--base-text-color);
+}
+
+.navlinks li:nth-child(1) {
+  padding: 0px 10px 0 0;
+}
+
+.navlinks li a {
+  color: var(--base-text-color);
+}
+
+nav li:last-child a {
+  color: var(--darkest-text-color);
+}
+
+.main1 {
+  max-width: 1000px;
+  background-color: var(--base-color);
+  margin-inline: auto;
+}
+.main1 h1 {
+  color: var(--darkest-text-color);
+}
+
+:root {
+  --base-color: #ECDFD1;
+  --darkest-text-color: #231104;
+  --base-text-color: #998474;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,56 @@
+li a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: 1000px;
+    margin-inline: auto;
+    background-color: var(--base-color)
+}
+
+#navbarheading {
+    margin-right: auto;
+    padding-left: 3px;
+    color: var(--darkest-text-color);
+}
+
+header img {
+    width:50px;
+    height: 20px;
+    object-fit:contain
+  
+}
+
+nav {
+    order: 1;
+}
+
+.navlinks {
+    list-style: none;
+}
+
+.navlinks li {
+    display:inline-block;
+    padding-inline: 20px;
+    border-right: 1px solid var(--base-text-color);
+    
+
+}
+
+.navlinks li:nth-child(1) {
+    padding: 0px 10px 0 0;
+}
+
+.navlinks li a {
+    color: var(--base-text-color);
+} 
+
+nav li:last-child a {
+    color: var(--darkest-text-color);
+}
+
+
+
