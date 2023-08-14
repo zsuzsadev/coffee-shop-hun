@@ -21,58 +21,162 @@ p {
   padding: 0;
 }
 
-li a {
+nav {
+  padding: 5px 20px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--base-text-color);
+}
+
+a:hover {
   text-decoration: none;
 }
 
-header {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
+.navbar {
   max-width: 1000px;
   margin-inline: auto;
-  background-color: var(--base-color);
+}
+.navbar li {
+  font-size: 16px;
+  padding: 15px 5px;
+}
+.navbar li a {
+  display: block;
 }
 
-#navbarheading {
-  margin-right: auto;
-  padding-left: 3px;
-  color: var(--darkest-text-color);
-}
-
-header img {
+img {
   width: 50px;
   height: 20px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-nav {
-  order: 1;
-}
-
-.navlinks {
-  list-style: none;
-}
-
-.navlinks li {
-  display: inline-block;
-  padding-inline: 20px;
-  border-right: 1px solid var(--base-text-color);
-}
-
-.navlinks li:nth-child(1) {
-  padding: 0px 10px 0 0;
-}
-
-.navlinks li a {
-  color: var(--base-text-color);
-}
-
-nav li:last-child a {
+.logo a {
+  font-size: 25px;
   color: var(--darkest-text-color);
 }
 
+.button {
+  border: 0;
+}
+.button a {
+  color: var(--darkest-text-color);
+}
+
+/*mobile*/
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.toggle {
+  order: 1;
+}
+
+.item.button {
+  order: 2;
+}
+
+.item {
+  width: 100%;
+  text-align: center;
+  order: 3;
+  display: none;
+}
+
+.item.active {
+  display: block;
+}
+
+.button {
+  border: 0;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.bars {
+  background: var(--base-text-color);
+  display: inline-block;
+  height: 2px;
+  width: 18px;
+  position: relative;
+}
+
+.bars::before, .bars::after {
+  content: "";
+  background: var(--base-text-color);
+  display: inline-block;
+  height: 2px;
+  width: 18px;
+  position: absolute;
+}
+
+.bars::before {
+  top: 5px;
+}
+
+.bars::after {
+  top: -5px;
+}
+
+/* tablet navbar*/
+@media all and (min-width: 600px) {
+  .navbar {
+    justify-content: center;
+  }
+  .logo {
+    flex: 1;
+  }
+  .item.button {
+    width: auto;
+    order: 1;
+    display: block;
+  }
+  .toggle {
+    order: 2;
+  }
+  .button {
+    border: 0;
+  }
+  .button a {
+    padding: 5px 15px;
+  }
+}
+@media all and (min-width: 900px) {
+  .navbar li {
+    padding: 5px 15px;
+  }
+  .item {
+    display: block;
+    width: auto;
+  }
+  .toggle {
+    display: none;
+  }
+  .logo {
+    order: 1;
+  }
+  .item {
+    order: 1;
+  }
+  .button {
+    order: 2;
+  }
+}
 .main1 {
   max-width: 1000px;
   background-color: var(--base-color);
