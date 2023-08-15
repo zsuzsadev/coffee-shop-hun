@@ -150,7 +150,7 @@ img {
 
 /* tablet navbar*/
 
-@media all and (min-width:600px){
+@media screen and (min-width:600px){
     .navbar {
         justify-content: center;
     }
@@ -169,7 +169,7 @@ img {
 
    }
 
-@media all and (min-width:900px){
+@media screen and (min-width:900px){
 
 .navbar li {
     padding: 5px 15px;
