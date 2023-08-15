@@ -1,26 +1,37 @@
 
+hr { 
+   overflow: hidden;
+    display: block;
+    max-width: 1100px;
+    margin: auto;
+    height: 2px;
+    border: 0;
+    border-top: 1px solid var(--base-text-color);
+    padding: 0;
+
+}
+
+
 nav {
     padding: 5px 20px;
 }
 
 ul {
     list-style-type: none;
-}
-
-
-a {
+    
+    a {
     text-decoration: none;
     color: var(--base-text-color)
 }
-
 a:hover {
     text-decoration: none;
+}
 }
 
 .navbar 
 {
 
-    max-width: 1000px;
+    max-width: 1100px;
     margin-inline:auto;
 
     li {
@@ -32,13 +43,14 @@ a {
 }
     }
 
-}
-
 img {
     width:50px;
     height: 20px;
     object-fit:contain
 }
+
+}
+
 
 
 .logo {
@@ -62,11 +74,13 @@ img {
 /*mobile*/
 
 
+
 .navbar {
     display:flex;
     flex-wrap:wrap;
     justify-content: space-between;
     align-items: center;
+    padding-left: 0px;
 }
 
 
@@ -103,7 +117,8 @@ img {
 
 
 .toggle {
-    cursor: pointer;
+   cursor: pointer;
+
 }
 
 .bars {
@@ -111,7 +126,7 @@ img {
     display: inline-block;
     height: 2px;
     width: 18px;
-    position:relative
+    position:fixed;
 }
 
 .bars::before, .bars::after {
@@ -150,21 +165,14 @@ img {
         order:2;
     }
 
-    .button {
-        border:0;
-
-        a {
-                   padding: 5px 15px;
- 
-        }
-    }
-
-}
+   }
 
 @media all and (min-width:900px){
 
 .navbar li {
-    padding: 5px 15px
+    padding: 5px 15px;
+    border-right: 2px solid var(--base-text-color);
+
 }
 
 

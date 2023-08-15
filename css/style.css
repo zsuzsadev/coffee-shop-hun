@@ -11,13 +11,23 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 1.1;
+  margin: 0;
+  padding: 0;
 }
 
 p {
   margin: 0;
+  padding: 0;
+}
+
+hr {
+  overflow: hidden;
+  display: block;
+  max-width: 1100px;
+  margin: auto;
+  height: 2px;
+  border: 0;
+  border-top: 1px solid var(--base-text-color);
   padding: 0;
 }
 
@@ -28,18 +38,16 @@ nav {
 ul {
   list-style-type: none;
 }
-
-a {
+ul a {
   text-decoration: none;
   color: var(--base-text-color);
 }
-
-a:hover {
+ul a:hover {
   text-decoration: none;
 }
 
 .navbar {
-  max-width: 1000px;
+  max-width: 1100px;
   margin-inline: auto;
 }
 .navbar li {
@@ -49,8 +57,7 @@ a:hover {
 .navbar li a {
   display: block;
 }
-
-img {
+.navbar img {
   width: 50px;
   height: 20px;
   -o-object-fit: contain;
@@ -75,6 +82,7 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  padding-left: 0px;
 }
 
 .toggle {
@@ -113,7 +121,7 @@ img {
   display: inline-block;
   height: 2px;
   width: 18px;
-  position: relative;
+  position: fixed;
 }
 
 .bars::before, .bars::after {
@@ -149,16 +157,11 @@ img {
   .toggle {
     order: 2;
   }
-  .button {
-    border: 0;
-  }
-  .button a {
-    padding: 5px 15px;
-  }
 }
 @media all and (min-width: 900px) {
   .navbar li {
     padding: 5px 15px;
+    border-right: 2px solid var(--base-text-color);
   }
   .item {
     display: block;
@@ -178,16 +181,150 @@ img {
   }
 }
 .main1 {
-  max-width: 1000px;
+  max-width: 1200px;
   background-color: var(--base-color);
   margin-inline: auto;
 }
-.main1 h1 {
+
+/*mobile!*/
+.main1flexcontainer {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+}
+.main1flexcontainer .main1flexitemtext {
+  margin-inline: auto;
+  text-align: center;
+}
+.main1flexcontainer .main1flexitemtext h1 {
+  font-size: 200px;
+  font-family: "Jomhuria";
   color: var(--darkest-text-color);
+  text-align: center;
+  margin-bottom: -70px;
+}
+.main1flexcontainer .main1flexitemtext p {
+  margin-bottom: 10px;
+}
+.main1flexcontainer .main1flexitemtext a {
+  margin: 0;
+  padding: 0;
+  color: var(--secondary-base-color);
+}
+.main1flexcontainer .main1flexitemimage {
+  text-align: center;
+  width: 100%;
+}
+.main1flexcontainer .main1flexitemimage img {
+  max-width: 340px;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
+/*tablet*/
+@media all and (min-width: 600px) {
+  .main1flexcontainer .main1flexitemtext h1 {
+    font-size: 300px;
+    font-family: "Jomhuria";
+    color: var(--darkest-text-color);
+    text-align: center;
+    margin-bottom: -120px;
+  }
+  .main1flexcontainer .main1flexitemimage img {
+    max-width: 420px;
+  }
+}
+/*desktop*/
+@media all and (min-width: 900px) {
+  .main1flexcontainer {
+    padding-top: 90px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+  }
+  .main1flexcontainer .main1flexitemtext {
+    margin-inline: auto;
+    text-align: left;
+  }
+  .main1flexcontainer .main1flexitemtext h1 {
+    font-size: 340px;
+    font-family: "Jomhuria";
+    color: var(--darkest-text-color);
+    text-align: left;
+    margin-bottom: -140px;
+    padding-left: 20px;
+  }
+  .main1flexcontainer .main1flexitemtext p {
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+  .main1flexcontainer .main1flexitemtext a {
+    font-size: 18px;
+    padding-left: 20px;
+    margin-left: 10px;
+    margin-top: 30px;
+    color: var(--secondary-base-color);
+  }
+  .main1flexcontainer .main1flexitemimage {
+    width: 50%;
+  }
+  .main1flexcontainer .main1flexitemimage img {
+    max-width: 450px;
+    height: 100%;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+/*larger desktop*/
+@media all and (min-width: 1100px) {
+  .main1flexcontainer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: row;
+    margin-inline: auto;
+  }
+  .main1flexcontainer .main1flexitemtext {
+    width: 50%;
+    padding-top: 20px;
+    margin-inline: auto;
+    text-align: left;
+    padding-right: 50px;
+  }
+  .main1flexcontainer .main1flexitemtext h1 {
+    font-size: 400px;
+    font-family: "Jomhuria";
+    color: var(--darkest-text-color);
+    margin-bottom: -140px;
+    padding-left: -20px;
+    text-align: left;
+  }
+  .main1flexcontainer .main1flexitemtext p {
+    padding-left: 20px;
+    margin-bottom: 100px;
+    font-size: 25px;
+  }
+  .main1flexcontainer .main1flexitemtext a {
+    padding-left: 20px;
+    color: var(--secondary-base-color);
+  }
+  .main1flexcontainer .main1flexitemimage {
+    width: 50%;
+    margin: 20px;
+  }
+  .main1flexcontainer .main1flexitemimage img {
+    text-align: center;
+    max-width: 550px;
+    height: 100%;
+  }
+}
 :root {
   --base-color: #ECDFD1;
   --darkest-text-color: #231104;
   --base-text-color: #998474;
+  --secondary-base-color: #875532;
 }/*# sourceMappingURL=style.css.map */
