@@ -10,6 +10,7 @@ body {
   background-color: var(--base-color);
 }
 
+/*resets*/
 h1, h2, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -20,6 +21,7 @@ p {
   padding: 0;
 }
 
+/*fontface*/
 @font-face {
   font-family: Impact;
   src: url(../fonts/impact.ttf);
@@ -55,7 +57,7 @@ ul a:hover {
   margin-inline: auto;
 }
 .navbar li {
-  font-size: 16px;
+  font-size: 17px;
   padding: 15px 5px;
 }
 .navbar li a {
@@ -299,7 +301,7 @@ ul a:hover {
        object-fit: contain;
   }
 }
-/*larger desktop*/
+/*larger desktop screen*/
 @media screen and (min-width: 1100px) {
   .main1flexcontainer {
     padding-top: 100px;
