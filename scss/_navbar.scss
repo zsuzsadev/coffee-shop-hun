@@ -56,8 +56,10 @@ img {
 .logo {
 
     a {
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        letter-spacing: 2px;
         font-size: 25px;
-        color: var(--darkest-text-color);
+        color: var(--base-text-color);
     }
 }
 
