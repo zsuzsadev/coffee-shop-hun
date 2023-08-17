@@ -2,19 +2,25 @@
     width: 100%;
     background-color: var(--secondary-base-color);
     margin-inline: auto;
+  
+
 }
     
 .container {
+
+
     h1{
         font-size: 50px;
         margin-bottom: 50px;
+        color:var(--darkest-text-color);
     }
 }
 
 
 .slider {
-    margin-bottom: 30px;
+    margin-bottom: 0px;
     position: relative;
+   
   }
   .slider .owl-item.active.center .slider-card {
     transform: scale(1.15);
@@ -31,13 +37,15 @@
 h5 {
     color: var(--base-color);
 }
-
   }
+
   .slider-card img {
     width: 100%;
     margin-bottom: 0;
     padding-bottom: 0px;
     border-radius: 5px 5px 0px 0px;
+
+  
   }
   .owl-nav .owl-prev {
     position: absolute;
@@ -56,6 +64,17 @@ h5 {
     z-index: 1;
     
   }
+
+/*smaller screens*/
+
+      @media screen and (max-width:1000px) {
+        .slider-card img {
+          width: 60% !important;
+        }
+        
+          }
+
+
 
   /*
   .owl-dots {
