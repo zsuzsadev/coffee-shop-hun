@@ -561,4 +561,107 @@ ul a:hover {
     margin-bottom: 30px;
     font-size: 60px;
   }
+}
+.main4 {
+  padding-bottom: 40px;
+  padding-top: 10px;
+  max-width: 1200px;
+  margin-inline: auto;
+}
+.main4 a {
+  color: var(--secondary-base-color);
+  margin-bottom: 10px;
+  padding-bottom: 10px;
+}
+
+/*mobile*/
+.main4 img {
+  padding-top: 10px;
+}
+.main4 h1, .main4 h3 {
+  text-align: center;
+  color: var(--darkest-text-color);
+}
+.main4 h1 {
+  font-size: 70px;
+  margin-top: 20px;
+}
+.main4 h3 {
+  margin-bottom: 30px;
+}
+.main4 h2 {
+  font-size: 40px;
+  color: var(--darkest-text-color);
+  text-align: center;
+}
+
+.main4flexcontainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin-inline: auto;
+}
+.main4flexcontainer img {
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+.main4flexcontainer p {
+  color: var(--darkest-text-color);
+}
+
+@media screen and (min-width: 900px) {
+  .main4flexcontainer {
+    margin-top: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding-inline: 20px;
+    margin-inline: auto;
+  }
+  .main4flexcontainer img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 50%;
+  }
+  .main4flexcontainer .main4text {
+    width: 50%;
+  }
+  .main4flexcontainer .main4text p, .main4flexcontainer .main4text h2 {
+    color: var(--darkest-text-color);
+    padding-right: 10px;
+  }
+  .main4flexcontainer .main4text h2 {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 10px;
+    color: var(--darkest-text-color);
+  }
+  .main4flexcontainer .main4text p {
+    text-align: justify;
+    margin-right: 20px;
+    padding-bottom: 10px;
+    margin-bottom: 0;
+  }
+}
+.footer {
+  max-width: 1200px;
+  margin-inline: auto;
+  text-align: center;
+}
+
+hr {
+  overflow: hidden;
+  display: block;
+  max-width: 1100px;
+  height: 2px;
+  margin: auto !important;
+  border: 0;
+  border-top: 1px solid var(--base-text-color);
+  padding: 0;
+}
+
+p {
+  color: var(--base-text-color);
 }/*# sourceMappingURL=style.css.map */
