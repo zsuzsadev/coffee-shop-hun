@@ -1,0 +1,162 @@
+* {
+    border-style: none !important;
+    
+}
+
+
+.main3 {
+    background-color: var(--base-color);
+    max-width: 1200px;
+    margin-inline: auto;
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: var(--darkest-text-color);
+}
+
+h2 {
+    margin-top: 5px;
+}
+
+img {
+    border-radius: 2px;
+}
+
+}
+
+/*mobile*/
+
+.flexcontainer {
+display: flex;
+flex-direction: column;
+margin: 10px;
+
+.card {
+    margin-inline: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding-inline: 10px;
+    width: 450px;
+    height: 730px;
+    background-color: transparent;
+
+
+    img {
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .textcontainer {
+padding: 10px;
+   
+    h2 {
+        text-align: center;
+        color: var(--darkest-text-color);
+        font-size: 40px;
+
+    }
+    p {
+text-align: justify;
+color: var(--base-text-color);
+    }
+ }
+}
+
+}
+
+
+/*tablet*/
+
+@media screen and (min-width:700px) {
+
+    .main3 {
+        padding-top: 30px;
+    }
+
+    .flexcontainer {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        
+        .card {
+            margin-inline: auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            width: 60%;
+            height: 730px;
+        
+        
+        
+            img {
+                width: 100%;
+                object-fit: contain;
+               max-height: 80%;
+            }
+        
+            p {
+                text-align: justify;
+                color: var(--base-text-color);
+                max-width: 420px;
+                margin-inline: auto;
+                    }
+
+                    h2 {
+                        font-size: 30px !important;
+                    }
+
+        }
+        
+        }
+        
+}
+
+/*desktop*/
+
+@media screen and (min-width:900px) {
+
+    .main3 {
+        padding-top: 50px;
+        padding-bottom: 50px
+    
+    }
+
+    .flexcontainer {
+        display: flex;
+        flex-direction: row;
+        
+        .card {
+            margin-inline: auto;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            padding-inline: 30px;
+            width: 60%;
+            height: 530px;
+            background-color: transparent;
+    
+        
+           
+        }
+        
+        }
+        
+}
+
+@media screen and (min-width:1000px) {
+
+
+.main3 {
+    padding-top: 50px;
+    padding-bottom: 100px;
+
+h1 {
+    margin-top: 20px ;
+    margin-bottom: 30px;
+    font-size: 60px;
+}
+
+}
+
+}
