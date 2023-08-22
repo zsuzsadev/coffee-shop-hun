@@ -13,6 +13,7 @@
 }
 
 
+
 /*mobile*/
 
 .main4 {
@@ -73,7 +74,9 @@ margin-bottom: 30px;
         padding-inline: 20px;
         margin-inline: auto;
 
-
+        h2 {
+            text-align: left !important;
+            }
     
     img {
         object-fit: contain;
