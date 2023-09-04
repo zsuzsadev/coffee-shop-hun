@@ -23,7 +23,6 @@
 hr { 
  
      max-width: 100px;
-    
      margin-bottom: 20px !important;
  }
  
@@ -33,6 +32,10 @@ h1 {
     text-align: center;
     margin-top: 30px;
     color: var(--darkest-text-color);
+    padding-top: 20px;
+    text-transform: uppercase;
+    font-family: Impact;
+    letter-spacing: 2px;
 }
 
 h2 {
