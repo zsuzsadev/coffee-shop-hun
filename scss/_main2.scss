@@ -1,23 +1,40 @@
 .main2 {
     width: 100%;
-    background-color: var(--secondary-base-color);
+    background-color: var(--base-color);
     margin-inline: auto;
   
-
+    hr { 
+      overflow: hidden;
+       display: block;
+       max-width: 1100px;
+       height: 2px;
+       margin: auto !important;
+       border: 0;
+       border-top: 1px solid var(--base-text-color);
+       padding: 0;
+   }
+   
+   
 }
     
 .container {
 
 
-    h1{
-        font-size: 60px;
-        margin-bottom: 50px;
-        color:var(--darkest-text-color);
-    }
+  h1{
+    font-size: 40px;
+    padding-top: 20px;
+    color:var(--secondary-base-color);
+    text-transform: uppercase;
+    font-family: Impact;
+    
+}
+
+    
 }
 
 
 .slider {
+  margin-top: 20px;
     margin-bottom: 0px;
     position: relative;
    
@@ -25,7 +42,6 @@
   .slider .owl-item.active.center .slider-card {
     transform: scale(1.15);
     opacity: 1;
-    background: transparent;
     color: #fff;
   }
   .slider-card {
@@ -35,7 +51,8 @@
     opacity: 0.5;
     transition: all 0.3s;
 h5 {
-    color: var(--base-color);
+    color: var(--secondary-base-color);
+    text-transform: uppercase;
 }
   }
 
