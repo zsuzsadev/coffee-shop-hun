@@ -11,14 +11,9 @@
 
 .card {
     hr { 
-        overflow: hidden;
-         display: block;
+       
          max-width: 100%;
          height: 2px;
-         margin: auto !important;
-         border: 0;
-         border-top: 1px solid var(--darkest-text-color);
-         padding: 0;
          margin-bottom: 20px !important;
     
      }
@@ -26,16 +21,10 @@
 
 
 hr { 
-    overflow: hidden;
-     display: block;
+ 
      max-width: 100px;
-     height: 2px;
-     margin: auto !important;
-     border: 0;
-     border-top: 1px solid var(--darkest-text-color);
-     padding: 0;
+    
      margin-bottom: 20px !important;
-
  }
  
 
@@ -51,6 +40,7 @@ h2 {
 }
 
 img {
+    padding-top: 10px;
     border-radius: 5px !important;
     max-width: 100%;
 }
@@ -63,12 +53,15 @@ img {
 display: flex;
 flex-direction: column;
 margin: 10px;
+border-radius: 5px !important;
+
 
 .card {
     margin-inline: auto;
     margin-top: 10px;
     margin-bottom: 20px;
     padding-inline: 10px;
+
     width: 450px;
     max-width: 100%;
     height: fit-content;
@@ -98,7 +91,6 @@ color: var(--darkest-text-color);
 
 }
 
-
 /*tablet*/
 
 @media screen and (min-width:700px) {
@@ -112,7 +104,8 @@ color: var(--darkest-text-color);
         flex-direction: column;
         margin: 10px;
         height: 100%;
-        background-color: var(--secondary-base-color);
+        border-radius: 5px !important;
+
         
         .card {
             margin-inline: auto;
@@ -140,9 +133,6 @@ color: var(--darkest-text-color);
                     h2 {
                         font-size: 30px !important;
                     }
-
-                  
-
         }
         
         }
@@ -163,18 +153,19 @@ color: var(--darkest-text-color);
         display: flex;
         flex-direction: row;
         height: fit-content;
-        background-color: var(--secondary-base-color);
+        width: fit-content;
+        background-color: transparent;
 
         
         .card {
             margin-inline: auto;
             margin-top: 10px;
             margin-bottom: 20px;
-            padding-inline: 30px;
+            margin-inline: 10px;
             width: 60%;
             height: 530px;
             height: fit-content;
-           background-color: transparent;
+           background-color: var(--secondary-base-color);
         }
         
         }
