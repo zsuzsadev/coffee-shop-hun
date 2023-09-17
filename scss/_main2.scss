@@ -4,14 +4,8 @@
     margin-inline: auto;
   
     hr { 
-      overflow: hidden;
-       display: block;
-       max-width: 1100px;
-       height: 2px;
-       margin: auto !important;
-       border: 0;
-       border-top: 1px solid var(--base-text-color);
-       padding: 0;
+      max-width: 100px;
+      margin-bottom: 20px !important;
    }
    
    
@@ -21,9 +15,11 @@
 
 
   h1{
-    font-size: 40px;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 30px;
+    color: var(--darkest-text-color);
     padding-top: 20px;
-    color:var(--secondary-base-color);
     text-transform: uppercase;
     font-family: Impact;
     letter-spacing: 2px;
