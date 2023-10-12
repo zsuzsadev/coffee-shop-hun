@@ -29,7 +29,8 @@ p {
 hr {
   overflow: hidden;
   display: block;
-  max-width: 1100px;
+  max-width: 1400px !important;
+  width: 100%;
   height: 2px;
   margin: auto !important;
   border: 0;
@@ -59,7 +60,7 @@ ul a:hover {
 
 .navbar {
   margin-bottom: 0;
-  max-width: 1100px;
+  max-width: 1400px;
   margin-inline: auto;
 }
 .navbar li {
@@ -195,8 +196,8 @@ ul a:hover {
     order: 2;
   }
 }
-.main1 {
-  max-width: 1200px;
+header {
+  max-width: 1400px;
   background-color: var(--base-color);
   margin-inline: auto;
 }
@@ -245,6 +246,7 @@ ul a:hover {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
+  pointer-events: none;
 }
 
 /*tablet*/
@@ -363,13 +365,13 @@ ul a:hover {
   --secondary-base-color: #875532;
 }
 
-.main2 {
+#carousel {
   width: 100%;
   background-color: var(--base-color);
   margin-inline: auto;
 }
-.main2 hr {
-  max-width: 100px;
+#carousel hr {
+  max-width: 100px !important;
   margin-bottom: 20px !important;
 }
 
@@ -462,21 +464,24 @@ ul a:hover {
   border-style: none !important;
 }
 
-.main3 {
+#about {
   background-color: var(--base-color);
-  max-width: 1200px;
+  max-width: 1400px;
   margin-inline: auto;
 }
-.main3 .card hr {
+#about .card {
+  background-color: rgba(135, 85, 50, 0.6352941176);
+}
+#about .card hr {
   max-width: 100%;
   height: 2px;
   margin-bottom: 20px !important;
 }
-.main3 hr {
-  max-width: 100px;
+#about hr {
+  max-width: 100px !important;
   margin-bottom: 20px !important;
 }
-.main3 h1 {
+#about h1 {
   font-size: 50px;
   text-align: center;
   margin-top: 30px;
@@ -486,10 +491,10 @@ ul a:hover {
   font-family: Impact;
   letter-spacing: 2px;
 }
-.main3 h2 {
+#about h2 {
   margin-top: 5px;
 }
-.main3 img {
+#about img {
   padding-top: 10px;
   border-radius: 5px !important;
   max-width: 100%;
@@ -511,7 +516,7 @@ ul a:hover {
   max-width: 100%;
   height: -moz-fit-content;
   height: fit-content;
-  background-color: var(--secondary-base-color);
+  background-color: rgba(135, 85, 50, 0.6352941176);
 }
 .flexcontainer .card img {
   max-width: 100%;
@@ -605,34 +610,34 @@ ul a:hover {
     font-size: 60px;
   }
 }
-.main4 {
+#more {
   padding-bottom: 40px;
   padding-top: 10px;
-  max-width: 1200px;
+  max-width: 1400px;
   margin-inline: auto;
 }
-.main4 a {
+#more a {
   color: var(--secondary-base-color);
   margin-bottom: 10px;
   padding-bottom: 10px;
 }
 
 /*mobile*/
-.main4 img {
+#more img {
   padding-top: 10px;
 }
-.main4 h1, .main4 h3 {
+#more h1, #more h3 {
   text-align: center;
   color: var(--darkest-text-color);
 }
-.main4 h1 {
+#more h1 {
   font-size: 70px;
   margin-top: 20px;
 }
-.main4 h3 {
+#more h3 {
   margin-bottom: 30px;
 }
-.main4 h2 {
+#more h2 {
   font-size: 40px;
   color: var(--darkest-text-color);
   text-align: center;

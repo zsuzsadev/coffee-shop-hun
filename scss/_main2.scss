@@ -1,10 +1,10 @@
-.main2 {
+#carousel {
     width: 100%;
     background-color: var(--base-color);
     margin-inline: auto;
   
     hr { 
-      max-width: 100px;
+      max-width: 100px !important;
       margin-bottom: 20px !important;
    }
    

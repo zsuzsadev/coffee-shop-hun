@@ -4,12 +4,15 @@
 }
 
 
-.main3 {
+#about {
     background-color: var(--base-color);
-    max-width: 1200px;
+    max-width: 1400px;
     margin-inline: auto;
 
 .card {
+
+    background-color: #875532a2;
+
     hr { 
        
          max-width: 100%;
@@ -22,7 +25,7 @@
 
 hr { 
  
-     max-width: 100px;
+     max-width: 100px !important;
      margin-bottom: 20px !important;
  }
  
@@ -68,7 +71,7 @@ border-radius: 5px !important;
     width: 450px;
     max-width: 100%;
     height: fit-content;
-    background-color: var(--secondary-base-color);
+    background-color: #875532a2;
 
 
     img {
